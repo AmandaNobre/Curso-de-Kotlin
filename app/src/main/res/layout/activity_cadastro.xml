@@ -8,20 +8,20 @@
     tools:context=".CadastroActivity">
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spnGenero"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/colorSnow"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintBottom_toTopOf="@+id/btnCadastroCadastrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText8" />
+        app:layout_constraintTop_toBottomOf="@+id/edtCadastroSenha" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/edtNome"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -30,15 +30,16 @@
         android:ems="10"
         android:hint="Nome"
         android:inputType="textPersonName"
+        android:textColor="@color/colorSnow"
         android:textColorHint="@color/colorSnow"
-        app:layout_constraintBottom_toTopOf="@+id/editText4"
+        app:layout_constraintBottom_toTopOf="@+id/edtSobrenome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/edtSobrenome"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -47,28 +48,31 @@
         android:ems="10"
         android:hint="Sobrenome"
         android:inputType="textPersonName"
+        android:textColor="@color/colorSnow"
         android:textColorHint="@color/colorSnow"
-        app:layout_constraintBottom_toTopOf="@+id/editText5"
+        app:layout_constraintBottom_toTopOf="@+id/edtCadastroEmail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintTop_toBottomOf="@+id/edtNome" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/edtCadastroEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/colorSnow"
         android:ems="10"
+        android:hint="E-mail"
         android:inputType="textEmailAddress"
+        android:textColor="@color/colorSnow"
         android:textColorHint="@color/colorSnow"
-        app:layout_constraintBottom_toTopOf="@+id/editText8"
+        app:layout_constraintBottom_toTopOf="@+id/edtCadastroSenha"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+        app:layout_constraintTop_toBottomOf="@+id/edtSobrenome" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -76,7 +80,7 @@
         android:layout_height="100dp"
         android:backgroundTint="@color/colorSnow"
         android:tint="@color/colorSnow"
-        app:layout_constraintBottom_toTopOf="@+id/editText3"
+        app:layout_constraintBottom_toTopOf="@+id/edtNome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -84,23 +88,25 @@
         app:srcCompat="@drawable/ic_person_add_black_24dp" />
 
     <EditText
-        android:id="@+id/editText8"
+        android:id="@+id/edtCadastroSenha"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/colorSnow"
         android:ems="10"
+        android:hint="Senha"
         android:inputType="numberPassword"
+        android:textColor="@color/colorSnow"
         android:textColorHint="@color/colorSnow"
-        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintBottom_toTopOf="@+id/spnGenero"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText5" />
+        app:layout_constraintTop_toBottomOf="@+id/edtCadastroEmail" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnCadastroCadastrar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
@@ -110,5 +116,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+        app:layout_constraintTop_toBottomOf="@+id/spnGenero" />
 </androidx.constraintlayout.widget.ConstraintLayout>

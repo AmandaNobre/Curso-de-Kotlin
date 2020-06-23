@@ -29,7 +29,7 @@
         app:srcCompat="@drawable/logo_estacao_hack" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnEntrar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
@@ -39,20 +39,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/edtLoginSenha" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnLoginCadastrar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Cadastrar"
-        app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintEnd_toEndOf="@+id/btnEntrar"
+        app:layout_constraintStart_toStartOf="@+id/btnEntrar"
+        app:layout_constraintTop_toBottomOf="@+id/btnEntrar" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/edtLoginEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -62,6 +62,7 @@
         android:ems="10"
         android:hint="E-mail"
         android:inputType="textPersonName"
+        android:textColor="@color/colorSnow"
         android:textColorHint="@color/colorSnow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -69,7 +70,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/edtLoginSenha"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -77,8 +78,9 @@
         android:ems="10"
         android:hint="Senha"
         android:inputType="textPassword"
+        android:textColor="@color/colorSnow"
         android:textColorHint="@color/colorSnow"
-        app:layout_constraintEnd_toEndOf="@+id/editText"
-        app:layout_constraintStart_toStartOf="@+id/editText"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintEnd_toEndOf="@+id/edtLoginEmail"
+        app:layout_constraintStart_toStartOf="@+id/edtLoginEmail"
+        app:layout_constraintTop_toBottomOf="@+id/edtLoginEmail" />
 </androidx.constraintlayout.widget.ConstraintLayout>
